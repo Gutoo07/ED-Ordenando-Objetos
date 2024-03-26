@@ -11,7 +11,7 @@ public class PessoaController {
 		Pessoa[] pessoas = Pessoa.carregar();
 		
 		for (int i = 0; i < pessoas.length; i++) {
-			for (int j = 0; j < pessoas.length; j++) {
+			for (int j = 0; j < pessoas.length - 1; j++) {
 				if (pessoas[j].getNome().compareTo(pessoas[j+1].getNome() ) > 0) {
 					Pessoa aux = pessoas[j];
 					pessoas[j] = pessoas[j+1];

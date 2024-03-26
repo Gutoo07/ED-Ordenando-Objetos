@@ -20,7 +20,9 @@ public class Arquivo {
 	public int totalLinhas() throws IOException {
 		BufferedReader reader = new BufferedReader( new FileReader( this.path));
 		int linhas = 0;
-		while (reader.readLine() != null) linhas++;
-		return 0;
+		while (reader.readLine() != null) {
+			linhas++;
+		}
+		return linhas;
 	}
 }

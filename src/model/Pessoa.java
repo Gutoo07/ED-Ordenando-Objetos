@@ -14,7 +14,7 @@ public class Pessoa {
 	}
 	public String getNome() {
 		return this.nome;
-	}
+	}						
 	public int getIdade() {
 		return this.idade;
 	}
@@ -34,7 +34,5 @@ public class Pessoa {
 			pessoas[i].setIdade(Integer.parseInt(valores[1]));
 		}
 		return pessoas;
-
 	}
-	
 }
